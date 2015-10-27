@@ -4,7 +4,16 @@
   </head>
   <body ng-controller="main">
 
-    {{x}}
+    {{x + y}}
+
+    <form>
+      <input type="number" ng-model="z" />
+      <button ng-click="add()">Add</button>
+    </form>
+
+    <ul>
+      <li ng-repeat="n in numbers">{{n}}</li>
+    </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="/main.js"></script>
